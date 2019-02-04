@@ -164,6 +164,13 @@ header {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 header .logo {
   display: flex;
   width: 90%;
@@ -189,6 +196,7 @@ header .login a {
 header .login button {
   background-color: #f9a03f;
   color: #fefff2;
+  cursor: pointer;
 }
 nav {
   width: 100%;
@@ -221,29 +229,60 @@ footer p {
   width: 100%;
   background-color: #4c4c4c;
 }
+@media (min-width: 800px) {
+  .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .main-content div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  .main-content div {
+    width: 30%;
+  }
 }
 .main-content div button {
   justify-content: center;
   background-color: #4c4c4c;
   border: none;
+  cursor: pointer;
 }
 .main-content div button img {
   width: 10%;
   border-radius: 100%;
 }
-.main-content div h3,
+.main-content div h3 {
+  color: #fefff2;
+  justify-content: center;
+}
 .main-content div p {
   color: #fefff2;
 }
 .section-content {
   width: 100%;
 }
+@media (min-width: 800px) {
+  .section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .section-content .food1 {
   width: 100%;
+}
+@media (min-width: 800px) {
+  .section-content .food1 {
+    width: 30%;
+  }
 }
 .section-content .food1 img {
   width: 100%;
@@ -253,4 +292,18 @@ footer p {
 }
 .section-content .food2 {
   display: none;
+}
+@media (min-width: 800px) {
+  .section-content .food2 {
+    display: block;
+    width: 30%;
+  }
+}
+@media (min-width: 800px) {
+  .section-content .food2 img {
+    width: 100%;
+  }
+}
+.section-content .food2 p {
+  color: #4c4c4c;
 }
