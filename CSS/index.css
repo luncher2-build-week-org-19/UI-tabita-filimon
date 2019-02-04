@@ -1,0 +1,256 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  min-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .logo {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+header .logo h1 {
+  margin-left: 2rem;
+}
+header .logo img {
+  width: 10%;
+}
+header .login {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .login a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+header .login button {
+  background-color: #f9a03f;
+  color: #fefff2;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4c4c4c;
+}
+footer nav a {
+  color: #fefff2;
+}
+footer p {
+  justify-content: center;
+  color: #fefff2;
+}
+.main-image {
+  width: 100%;
+}
+.main-content {
+  width: 100%;
+  background-color: #4c4c4c;
+}
+.main-content div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-content div button {
+  justify-content: center;
+  background-color: #4c4c4c;
+  border: none;
+}
+.main-content div button img {
+  width: 10%;
+  border-radius: 100%;
+}
+.main-content div h3,
+.main-content div p {
+  color: #fefff2;
+}
+.section-content {
+  width: 100%;
+}
+.section-content .food1 {
+  width: 100%;
+}
+.section-content .food1 img {
+  width: 100%;
+}
+.section-content .food1 p {
+  color: #4c4c4c;
+}
+.section-content .food2 {
+  display: none;
+}
