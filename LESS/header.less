@@ -28,7 +28,7 @@ header{
     }
     
     
-    .login{
+    .logins{
         display:flex;
         width: 90%;
         justify-content: space-evenly;
@@ -41,16 +41,41 @@ header{
             color: @grey;
             font-size: 2.5rem;
         }
-        button{
-            background-color: @orange;
-            color:@white;
-            cursor: pointer;
-            font-size: 2.5rem;
-            border: none;
-            border-radius: 20px;
-            padding: 0 15px;
 
-        }
     }
 
+    .login{
+        display: none;
+        position: fixed;
+        width: 75px;
+        height: 25px;
+        background-color: @grey;
+        color:@white;
+        z-index:2;
+    }
+
+    .login ul li{
+        font-size: 12px;
+        padding: 5px;
+        text-align:center;
+    }
+
+    .login-open{
+        display:block;
+    }
+
+    div{
+        
+        button{
+        background-color: @orange;
+        color:@white;
+        cursor: pointer;
+        font-size: 2.5rem;
+        border: none;
+        border-radius: 20px;
+        padding: 0 15px;
+
+    }
+
+}
 }
