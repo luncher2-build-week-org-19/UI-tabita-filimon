@@ -1,15 +1,17 @@
 .main-image{
-    width: 100%;   
+    width: 100%; 
 }
 
 .main-content{
     width: 100%;
     background-color: @grey;
+    margin-top: 100px;
+    padding-bottom: 60px;
     @media @desktop {
         width: 100%;
         display: flex;
-        flex-direction: row;
         justify-content: center;
+        margin-top: 200px;
     }
     div{
         display:flex;
@@ -24,6 +26,7 @@
             background-color: @grey;
             border:none;
             cursor: pointer;
+            margin-top: 60px;
             img{
                 width: 10%;
                 border-radius: 100%;
@@ -32,8 +35,11 @@
         h3 {
             color: @white;
             justify-content: center;
+            font-size: 3rem;
+            margin-top: 20px;
         }
-        p{
+        .dropdown-content{
+            display: none;
             color:@white;
         }
     }

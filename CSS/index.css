@@ -134,14 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -151,7 +144,7 @@ h3 {
 }
 p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 2;
 }
 .container {
   min-width: 400px;
@@ -176,36 +169,47 @@ header .logo {
   width: 90%;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 header .logo h1 {
   margin-left: 2rem;
+  font-size: 4rem;
+  color: #4c4c4c;
 }
 header .logo img {
-  width: 10%;
+  width: 15%;
 }
 header .login {
   display: flex;
   width: 90%;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 15px;
 }
 header .login a {
   text-decoration: none;
   color: #4c4c4c;
+  font-size: 2.5rem;
 }
 header .login button {
   background-color: #f9a03f;
   color: #fefff2;
   cursor: pointer;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
 }
 nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 20px;
 }
 nav a {
   text-decoration: none;
   color: #4c4c4c;
+  font-size: 2rem;
 }
 footer {
   width: 100%;
@@ -214,13 +218,18 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #4c4c4c;
+  padding: 20px 0 10px 0;
+  margin-top: 100px;
 }
 footer nav a {
   color: #fefff2;
+  font-size: 2rem;
 }
 footer p {
   justify-content: center;
   color: #fefff2;
+  font-size: 1rem;
+  margin-top: 40px;
 }
 .main-image {
   width: 100%;
@@ -228,13 +237,15 @@ footer p {
 .main-content {
   width: 100%;
   background-color: #4c4c4c;
+  margin-top: 100px;
+  padding-bottom: 60px;
 }
 @media (min-width: 800px) {
   .main-content {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    margin-top: 200px;
   }
 }
 .main-content div {
@@ -253,6 +264,7 @@ footer p {
   background-color: #4c4c4c;
   border: none;
   cursor: pointer;
+  margin-top: 60px;
 }
 .main-content div button img {
   width: 10%;
@@ -261,8 +273,11 @@ footer p {
 .main-content div h3 {
   color: #fefff2;
   justify-content: center;
+  font-size: 3rem;
+  margin-top: 20px;
 }
-.main-content div p {
+.main-content div .dropdown-content {
+  display: none;
   color: #fefff2;
 }
 .section-content {
@@ -272,8 +287,7 @@ footer p {
   .section-content {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 .section-content .food1 {
@@ -285,10 +299,22 @@ footer p {
   }
 }
 .section-content .food1 img {
-  width: 100%;
+  width: 95%;
+  margin: 100px 0 0 10px;
+  border-radius: 20px;
+}
+@media (min-width: 800px) {
+  .section-content .food1 img {
+    width: 100%;
+    height: 25.3rem;
+    margin: 200px 0 0 0;
+  }
 }
 .section-content .food1 p {
   color: #4c4c4c;
+  font-size: 1.5rem;
+  margin: 20px 10px 60px 10px;
+  width: 95%;
 }
 .section-content .food2 {
   display: none;
@@ -302,9 +328,14 @@ footer p {
 @media (min-width: 800px) {
   .section-content .food2 img {
     width: 100%;
-    height: 253px;
+    height: 55%;
+    height: 25.3rem;
+    margin-top: 200px;
+    border-radius: 20px;
   }
 }
 .section-content .food2 p {
   color: #4c4c4c;
+  font-size: 1.5rem;
+  margin: 20px 10px 60px 10px;
 }
