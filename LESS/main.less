@@ -7,6 +7,12 @@
     background-color: @grey;
     margin-top: 100px;
     padding-bottom: 60px;
+    @media @tablet {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
     @media @desktop {
         width: 100%;
         display: flex;
@@ -18,17 +24,21 @@
         flex-direction:column;
         justify-content:center;
         align-items: center;
+        @media @tablet {
+            width: 35%;
+        }
         @media @desktop {
             width: 30%;
         }
         button{
+            width: 25%;
             justify-content: center;
             background-color: @grey;
             border:none;
             cursor: pointer;
             margin-top: 60px;
             img{
-                width: 10%;
+                width: 40%;
                 border-radius: 100%;
             }
         }
@@ -37,15 +47,30 @@
             justify-content: center;
             font-size: 3rem;
             margin-top: 20px;
+            border-bottom: 1px dashed @white;
         }
         .dropdown-content{
             display: none;
             color:@white;
+            padding: 10px;
 
             &.content-open {
-                height: 400px;
+                height: 300px;
                 display: block;
+                @media @tablet {
+                    height: 450px;
+                }
               }
+
+            .zero{
+                color: @orange; 
+            }
+            .important{
+                color: @blue;
+            }
+            .help{
+                color: @pink;
+            }
         }
         
        

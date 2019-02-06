@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="./CSS/index.css"/>
     <script src="./JS/header.js" async></script>
     <script src="./JS/main.js" async></script>
+    <script src="./JS/carousel.js" async></script>
 </head>
 
 <body>
 
-<div class = "container">
+<div class = "container-home">
 
     <header>
         <div class = "logo">
@@ -21,10 +22,8 @@
         </div>
             
         <div class = "donate">
-        <div class ="logins parents">Parents</div>
-        <div class ="logins admins">Admin</div>
-        <div class="login-content hidden">
-            <a class="login-link" href="#" target="_blank">Log In</a>
+        <div id ="login">
+            <a href="">Admin</a>
         </div>
         <div><button>Donate</button></div>
         </div>
@@ -37,62 +36,58 @@
         <a href="#">Contact</a>
     </nav>
 
+
     <img class = "main-image" src="IMG/enfants fiches bienfaits du sport.JPG" alt="Happy kids with fruits and veggies">
 
+    
     <div class= "main-content">
         <div class ="content">
             <button class ="logoButton active-button"> <img src="IMG/Logo1.jpg" alt="orange button"></button>
-            <h3>Title I</h3>
-            <p class = "dropdown-content active-content">Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <h3>Mission</h3>
+            <p class = "dropdown-content active-content">There are kids today in this country who go without student lunches. Our
+                mission is to bring that number down to <span class ="zero">zero</span>. We provide an efficient method for schools to broadcast the needs of 
+                their students by declaring a monetary goal that they need to reach in order to provide lunches for any students that 
+                may not have the necessary means to obtain one. </p>
         </div>
         <div class ="content" >
             <button class ="logoButton"> <img src="IMG/Logo2.jpg" alt="blue button"></button>
-            <h3>Title II</h3>
-            <p class = "dropdown-content">Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <h3>Values</h3>
+            <p class = "dropdown-content">We believe every child has the right to a nutritious lunch. Food is not only vital
+                to a child's learning capacity but lunchtime plays a vast role on a child's social interaction with other 
+                students. Research demonstrates that school meal programs play an <span class= "important">important role</span> in supporting obesity prevention, 
+                overall student health and academic achievement by improving children’s diets and combatting hunger. </p>
         </div>
         <div class ="content">
             <button class ="logoButton"> <img src="IMG/Logo3.jpg" alt="pink button"></button>
-            <h3>Title III</h3>
-            <p class = "dropdown-content">Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <h3>Make a Difference</h3>
+            <p class = "dropdown-content">Displaying our need for donations is admitting that we have a problem with our
+                current meal programs in school. We are constantly rallying for an increased funding for these programs but 
+                until then we need your <span class ="help">help</span>.  Make a difference in a child's health and future by providing them with 
+                necessities that need to succeed.
+             
+            </p>
         </div>
     </div>
 
     <div class = "section-content">
         <div class ="food1">
             <img src="IMG/https___images.alphacoders.com_768_76811.jpg" alt="veggies">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <p>According to USDA, the new regulations added 10 cents to the cost of preparing every school lunch and 27 cents 
+                for every breakfast. To help schools meet the rules, Congress provided school meal programs 
+                only 6 additional cents for each lunch and no additional funds for breakfast.  </p>
         </div>
         <div class = "food2">
             <img src="IMG/https___chevydetroit.com_wp-content_uploads_2013_10_Deli-Sandwich.jpg" alt="sandwiches">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <p>A study found that, on average, the full cost to produce a reimbursable school lunch was $2.91, exceeding the free lunch subsidy, which 
+                at the time of the study was conducted, was $2.51. To boost operational revenue, many school meal programs rely on a la carte sales, 
+                provide catering services or contract with community programs</p>
         </div>
-        <div class ="food2">
+        <div class ="food3">
             <img src="IMG/1200-4267-fruits-photo1.jpg" alt="fruits">
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing, elit sem a nisi libero. 
-                Semper suspendisse condimentum proin eros porta nullam ornare, senectus hac dictumst vestibulum pretium 
-                blandit platea cum, ac at penatibus leo tristique metus. Luctus commodo tristique parturient interdum 
-                maecenas aliquet curae velit dictum, morbi nisl tincidunt laoreet sodales vestibulum tellus urna, 
-                semper id fames dapibus porta himenaeos elementum pellentesque.</p>
+            <p>Children from families with incomes at or below 130% of the poverty level are eligible for free school meals. 
+                Those with incomes between 130% and 185% of the poverty level are eligible for reduced price meals 
+                (student pays 30 cents for breakfast and 40 cents for lunch). For the 2018-19 school year, 130% of the poverty level 
+                is $32,630 for a family of four and 185% is $46,435.</p>
         </div>
     </div>
 
