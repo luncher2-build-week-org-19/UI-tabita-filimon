@@ -590,6 +590,7 @@ h2 {
 }
 .articles .article .open {
   display: block;
+  height: 300px;
 }
 .articles .article .button {
   margin-top: 10px;
