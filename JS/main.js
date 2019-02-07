@@ -2,7 +2,7 @@ class Content{
     constructor(content){
         this.content = content;
 
-        this.mainButton = content.querySelector('.logoButton');
+        this.mainButton = content.querySelector('.logo-button');
 
         this.mainButton.addEventListener('click', () => this.expandContent());
     }
