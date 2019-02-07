@@ -212,13 +212,7 @@ header .donate #login a {
   font-size: 2.5rem;
   cursor: pointer;
 }
-header .donate #login a:hover {
-  background-color: #f9a03f;
-  color: #fefff2;
-  border-radius: 20px;
-  padding: 2px 15px;
-}
-header div button {
+header div .donate-button {
   background-color: #f9a03f;
   color: #fefff2;
   cursor: pointer;
@@ -269,11 +263,33 @@ footer p {
 }
 .main-image {
   width: 100%;
+  border-top: 40px solid #4c4c4c;
+  margin-top: 10px;
+}
+.line1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #c2095a;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+@media (min-width: 800px) {
+  .line1 {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 1000px) {
+  .line1 {
+    margin-top: 100px;
+  }
 }
 .main-content {
   width: 100%;
   background-color: #4c4c4c;
-  margin-top: 100px;
+  margin-top: 50px;
   padding-bottom: 60px;
 }
 @media (min-width: 800px) {
@@ -281,7 +297,7 @@ footer p {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 75px;
   }
 }
 @media (min-width: 1000px) {
@@ -289,7 +305,7 @@ footer p {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 }
 .main-content div {
@@ -350,6 +366,26 @@ footer p {
 .main-content div .dropdown-content .help {
   color: #c2095a;
 }
+.line2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #180aaf;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 50px;
+}
+@media (min-width: 800px) {
+  .line2 {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 1000px) {
+  .line2 {
+    margin-top: 100px;
+  }
+}
 .section-content {
   width: 100%;
 }
@@ -384,21 +420,21 @@ footer p {
 }
 .section-content .food1 img {
   width: 95%;
-  margin: 100px 0 0 10px;
+  margin: 50px 0 0 10px;
   border-radius: 20px;
 }
 @media (min-width: 800px) {
   .section-content .food1 img {
     width: 100%;
     height: 20rem;
-    margin: 200px 0 0 0;
+    margin: 75px 0 0 0;
   }
 }
 @media (min-width: 1000px) {
   .section-content .food1 img {
     width: 100%;
     height: 25.3rem;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
   }
 }
 .section-content .food1 p {
@@ -427,7 +463,7 @@ footer p {
     width: 100%;
     height: 55%;
     height: 20rem;
-    margin-top: 200px;
+    margin-top: 75px;
     border-radius: 20px;
   }
 }
@@ -436,7 +472,7 @@ footer p {
     width: 100%;
     height: 55%;
     height: 25.3rem;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 20px;
   }
 }
@@ -465,7 +501,7 @@ footer p {
     width: 100%;
     height: 55%;
     height: 20rem;
-    margin-top: 200px;
+    margin-top: 75px;
     border-radius: 20px;
   }
 }
@@ -474,7 +510,7 @@ footer p {
     width: 100%;
     height: 55%;
     height: 25.3rem;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 20px;
   }
 }
@@ -488,8 +524,7 @@ h2 {
   text-align: center;
   color: #fefff2;
   background-color: #4c4c4c;
-  margin: 80px 0;
-  padding: 40px;
+  margin: 10px 0;
 }
 .images {
   width: 100%;
@@ -540,4 +575,71 @@ h2 {
   font-size: 1.5rem;
   text-align: start;
   margin-top: 20px;
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #4c4c4c;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4c4c4c;
+  color: #fefff2;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #f9a03f;
+}
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+  margin-top: 100px;
+  width: 90%;
+  margin-left: 5%;
+}
+@media (min-width: 800px) {
+  form {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+@media (min-width: 1000px) {
+  form {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+label {
+  font-size: 1.5rem;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article {
+  margin-top: 80px;
+}
+.article .para {
+  display: none;
+}
+.article .open {
+  display: block;
+}
+.article .button {
+  margin-top: 10px;
+  border: none;
+  background-color: #f9a03f;
+  border-radius: 10px;
+  color: #fefff2;
 }
