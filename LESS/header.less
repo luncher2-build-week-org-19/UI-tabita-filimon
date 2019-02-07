@@ -3,7 +3,6 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    
     @media @desktop {
         display: flex;
         flex-direction: row;
@@ -16,8 +15,6 @@ header{
         justify-content: center;
         align-items:center;
         margin-top: 40px;
-       
-        
         @media @desktop {
             display: flex;
             justify-content: flex-start;
@@ -36,12 +33,10 @@ header{
         }
     }
     
-
     .donate{
         display:flex;
         justify-content: center;
         align-items: center;
-        
         @media @desktop {
             margin-right: 100px;
             margin-left: 20px;
@@ -55,32 +50,25 @@ header{
             margin-top: 15px;
             padding: 10px;
             
-    
             a{
-            text-decoration:none;
-            color: @grey;
-            font-size: 2.5rem;
-            cursor: pointer;
-            
+                text-decoration:none;
+                color: @grey;
+                font-size: 2.5rem;
+                cursor: pointer;
             }
-    
+        }
+
+        .donate-button{
+            background-color: @orange;
+            color:@white;
+            cursor: pointer;
+            font-size: 2.5rem;
+            border: none;
+            border-radius: 20px;
+            padding: 0 15px;
+            margin: 15px 0 0 10px;
         }
     } 
-
-    div{
-        
-        .donate-button{
-        background-color: @orange;
-        color:@white;
-        cursor: pointer;
-        font-size: 2.5rem;
-        border: none;
-        border-radius: 20px;
-        padding: 0 15px;
-        margin: 15px 0 0 10px;
-
-    }
-
 }
-}
+
 

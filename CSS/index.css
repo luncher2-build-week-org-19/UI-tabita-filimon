@@ -212,7 +212,7 @@ header .donate #login a {
   font-size: 2.5rem;
   cursor: pointer;
 }
-header div .donate-button {
+header .donate .donate-button {
   background-color: #f9a03f;
   color: #fefff2;
   cursor: pointer;
@@ -308,23 +308,23 @@ footer p {
     margin-top: 100px;
   }
 }
-.main-content div {
+.main-content .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 800px) {
-  .main-content div {
+  .main-content .content {
     width: 35%;
   }
 }
 @media (min-width: 1000px) {
-  .main-content div {
+  .main-content .content {
     width: 30%;
   }
 }
-.main-content div button {
+.main-content .content button {
   width: 25%;
   justify-content: center;
   background-color: #4c4c4c;
@@ -332,38 +332,38 @@ footer p {
   cursor: pointer;
   margin-top: 60px;
 }
-.main-content div button img {
+.main-content .content button img {
   width: 40%;
   border-radius: 100%;
 }
-.main-content div h3 {
+.main-content .content h3 {
   color: #fefff2;
   justify-content: center;
   font-size: 3rem;
   margin-top: 20px;
   border-bottom: 1px dashed #fefff2;
 }
-.main-content div .dropdown-content {
+.main-content .content .dropdown-content {
   display: none;
   color: #fefff2;
   padding: 10px;
 }
-.main-content div .dropdown-content.content-open {
+.main-content .content .dropdown-content.content-open {
   height: 300px;
   display: block;
 }
 @media (min-width: 800px) {
-  .main-content div .dropdown-content.content-open {
+  .main-content .content .dropdown-content.content-open {
     height: 450px;
   }
 }
-.main-content div .dropdown-content .zero {
+.main-content .content .dropdown-content .zero {
   color: #f9a03f;
 }
-.main-content div .dropdown-content .important {
+.main-content .content .dropdown-content .important {
   color: #180aaf;
 }
-.main-content div .dropdown-content .help {
+.main-content .content .dropdown-content .help {
   color: #c2095a;
 }
 .line2 {
@@ -576,6 +576,28 @@ h2 {
   text-align: start;
   margin-top: 20px;
 }
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.articles .article {
+  margin-top: 80px;
+}
+.articles .article .para {
+  display: none;
+}
+.articles .article .open {
+  display: block;
+}
+.articles .article .button {
+  margin-top: 10px;
+  border: none;
+  background-color: #f9a03f;
+  border-radius: 10px;
+  color: #fefff2;
+}
 input[type=text],
 select,
 textarea {
@@ -620,26 +642,4 @@ form {
 }
 label {
   font-size: 1.5rem;
-}
-.articles {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.article {
-  margin-top: 80px;
-}
-.article .para {
-  display: none;
-}
-.article .open {
-  display: block;
-}
-.article .button {
-  margin-top: 10px;
-  border: none;
-  background-color: #f9a03f;
-  border-radius: 10px;
-  color: #fefff2;
 }
