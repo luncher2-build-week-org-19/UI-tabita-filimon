@@ -583,24 +583,41 @@ h2 {
   align-items: center;
 }
 .articles .article {
-  margin-top: 80px;
-  width: 50%;
+  margin-top: 40px;
+  width: 75%;
 }
-.articles .article .para {
+@media (min-width: 1000px) {
+  .articles .article {
+    margin-top: 80px;
+    width: 50%;
+  }
+}
+.articles .article h2 {
+  margin-top: 50px;
+}
+.articles .article p {
   display: none;
   color: #4c4c4c;
   padding: 10px;
 }
-.articles .article .open {
+.articles .article .open-date {
   display: block;
-  height: 300px;
+}
+.articles .article .open-para {
+  display: block;
+  height: 100px;
 }
 .articles .article .button {
-  margin-top: 10px;
+  margin-top: 50px;
   border: none;
   background-color: #f9a03f;
   border-radius: 10px;
   color: #fefff2;
+}
+@media (min-width: 1000px) {
+  .articles .article .button {
+    margin-top: 10px;
+  }
 }
 input[type=text],
 select,

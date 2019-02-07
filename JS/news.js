@@ -8,9 +8,11 @@ class Article {
     }
 
     expandArticle(){
-        const para = this.article.querySelectorAll('.para');
+        const para = this.article.querySelector('.para');
+        const date = this.article.querySelector('.date');
 
-        para.classList.toggle('open');
+        para.classList.toggle('open-para');
+        date.classList.toggle('open-date');
     }
 }
 
