@@ -8,7 +8,7 @@ class Article {
     }
 
     expandArticle(){
-        const para = this.article.querySelector('.para');
+        const para = this.article.querySelectorAll('.para');
 
         para.classList.toggle('open');
     }
