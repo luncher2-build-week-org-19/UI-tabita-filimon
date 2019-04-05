@@ -1,0 +1,45 @@
+.articles{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .article{
+        margin-top: 40px;
+        width: 75%;
+        @media @desktop{
+        margin-top: 80px;
+        width: 50%;
+        }
+
+        h2{
+            margin-top: 50px;
+        }
+
+        p{
+            display: none;
+            color: @grey;
+            padding: 10px;
+        }
+    
+        .open-date {
+            display: block;
+        }
+
+        .open-para {
+            display: block;
+            height: 100px;
+        }
+
+        .button{
+            margin-top: 50px;
+            border: none;
+            background-color: @orange;
+            border-radius: 10px;
+            color: @white;
+            @media @desktop{
+                margin-top: 10px;
+            }
+        } 
+    }
+}
